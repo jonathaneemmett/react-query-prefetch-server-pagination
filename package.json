@@ -1,24 +1,33 @@
 {
-  "name": "react-react-query",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.4"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "13.5.4"
-  }
+	"name": "react-react-query",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"jsonserver": "json-server --watch db.json --port 3001",
+		"dev": "concurrently \"npm run jsonserver\" \"next dev\"",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.1",
+		"@emotion/styled": "^11.11.0",
+		"@mui/material": "^5.14.13",
+		"@mui/x-data-grid": "^6.16.2",
+		"@tanstack/react-query": "^4.36.1",
+		"@tanstack/react-query-devtools": "^4.36.1",
+		"concurrently": "^8.2.1",
+		"json-server": "^0.17.4",
+		"next": "13.5.4",
+		"react": "^18",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"eslint": "^8",
+		"eslint-config-next": "13.5.4",
+		"typescript": "^5"
+	}
 }
