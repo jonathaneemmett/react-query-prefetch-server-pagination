@@ -1,5 +1,5 @@
-import DisplayGrid from './components/DisplayGrid';
+import Posts from './components/Posts';
 
 export default async function Home() {
-	return <DisplayGrid />;
+	return <Posts />;
 }
